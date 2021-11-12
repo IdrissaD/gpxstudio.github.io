@@ -413,7 +413,7 @@ export default class Buttons {
         this.languages = L.control({position: 'bottomleft'});
         this.languages.onAdd = function (map) {
             var div = _this.languages_content;
-            for (var i=0; i<div.children.length; i++) if (div.children[i].textContent == language) {
+            for (var i=0; i<div.children.length; i++) if (div.children[i].id == language) {
                 div.children[i].style.display = 'none';
                 break;
             }
